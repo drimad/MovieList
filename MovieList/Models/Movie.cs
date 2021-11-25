@@ -24,6 +24,7 @@ namespace MovieList.Models
         public Genre Genre { get; set; }
 
         public string Slug =>
+        // this is needed for url SEO
             Name?.Replace(' ', '-').ToLower() + '-' + Year?.ToString();
     }
 }
